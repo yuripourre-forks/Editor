@@ -1,5 +1,5 @@
 import { Application } from "spectron";
-import { DialogAddon } from "spectron-dialog-addon";
+import { DialogAddon } from "nan";
 
 import { join } from "path";
 import { tmpdir, platform } from "os";

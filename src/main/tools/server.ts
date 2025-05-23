@@ -74,8 +74,8 @@ export class GameServer {
 		const ips: string[] = [];
 
 		Object.keys(interfaces).forEach((name) => {
-			interfaces[name].map((i) => {
-				if (i.address.match(/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/)) {
+			interfaces[name]?.forEach((i) => {
+				if (i?.address?.match(/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/)) {
 					ips.push(i.address);
 				}
 			});

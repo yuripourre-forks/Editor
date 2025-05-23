@@ -212,7 +212,7 @@ export class WelcomeDialog extends React.Component<IWelcomeDialogProps, IWelcome
         Overlay.Show("Creating Project...", true);
 
         // Write project.
-        const projectZipPath = join(AppTools.GetAppPath(), `assets/project/workspace.zip`);        
+        const projectZipPath = join(AppTools.GetAppPath(), `assets/project/workspace.zip`);
         const projectZip = new Zip(projectZipPath);
         await new Promise<void>((resolve, reject) => {
             projectZip.extractAllToAsync(path, false, (err) => err ? reject(err) : resolve());

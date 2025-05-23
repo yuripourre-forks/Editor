@@ -135,6 +135,7 @@ export default class EditorApp {
 			autofocus: true,
 			url: "file://" + __dirname + "/../../../html/editor.html",
 		});
+
 		if (isWindowMaximized ?? true) {
 			this.Window.maximize();
 		}
